@@ -24,11 +24,10 @@ pub fn walls(config: &Config, codename: &str) -> anyhow::Result<Vec<String>> {
     let config = read(config, codename)?;
     for wallpaper in &config.wallpapers {
         for fname in [&wallpaper.filename, &wallpaper.filename_dark] {
-            if let Some(name) = fname {
-                if let Some(name) = extract_name(name)? {
+            if let Some(name) = fname
+                && let Some(name) = extract_name(name)? {
                     result.push(name);
                 }
-            }
         }
     }
 
