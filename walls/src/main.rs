@@ -4,6 +4,7 @@ mod upstream;
 
 use std::env;
 use std::fs;
+use std::io::Write;
 
 use crate::config::Config;
 
@@ -18,12 +19,43 @@ fn main() -> anyhow::Result<()> {
     for release in release_history.releases {
         let codename = &release.codename;
         let walls = upstream::walls(&config, codename)?;
-        for wall in walls {
-            fs::create_dir_all(format!("{curated_path}/{codename}"))?;
-            let target = format!("{codename}/{wall}");
-            copy(&config, &wall, &target)?;
-        }
+
+        curate(&config, codename, &walls)?;
+        preview(&config, codename, &walls)?;
     }
+
+    Ok(())
+}
+
+fn curate(config: &Config, codename: &str, wallpapers: &Vec<String>) -> anyhow::Result<()> {
+    let curated_path = config.curated_path.display();
+
+    for filename in wallpapers {
+        fs::create_dir_all(format!("{curated_path}/{codename}"))?;
+        let target = format!("{codename}/{filename}");
+        copy(config, filename, &target)?;
+    }
+
+    Ok(())
+}
+
+fn preview(config: &Config, codename: &str, wallpapers: &Vec<String>) -> anyhow::Result<()> {
+    let curated_path = config.curated_path.display();
+    let mut content = String::new();
+
+    // title
+    content.push_str(&format!("# {codename}\n\n"));
+
+    // content
+    for filename in wallpapers {
+        let link = &format!(
+            "<img src=https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/main/curated/{codename}/{filename}>"
+        );
+        content.push_str(&format!("{link}\n\n"));
+    }
+
+    let mut file = fs::File::create(format!("{curated_path}/{codename}/README.md"))?;
+    file.write_all(&content.into_bytes())?;
 
     Ok(())
 }
