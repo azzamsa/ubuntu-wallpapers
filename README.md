@@ -4,14 +4,16 @@
 
   <img src='docs/logo.svg' width=80px />
 
-  <a href="https://github.com/azzamsa/ubuntu-wallpapers/workflows/ci.yml">
-    <img src="https://github.com/azzamsa/ubuntu-wallpapers/workflows/ci/badge.svg" alt="Build status" />
+  <a href="https://github.com/azzamsa/ubuntu-wallpapers/actions/workflows/ci.yml">
+    <img src="https://github.com/azzamsa/ubuntu-wallpapers/actions/workflows/ci.yml/badge.svg" alt="Build status" />
   </a>
 
 </div>
 <!-- dprint-ignore-end -->
 
 ---
+
+👉 [**Browse Wallpapers →**](curated/)
 
 ## Features
 

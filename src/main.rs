@@ -52,7 +52,7 @@ fn preview(config: &Config, codename: &str, wallpapers: &Vec<String>) -> anyhow:
     // content
     for filename in wallpapers {
         let link = &format!(
-            "<img src=https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/main/curated/{codename}/{filename}>"
+            "<img src=https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/{codename}/{filename}>"
         );
         content.push_str(&format!("{link}\n\n"));
     }
