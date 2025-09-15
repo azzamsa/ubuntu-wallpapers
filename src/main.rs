@@ -14,6 +14,8 @@ fn main() -> anyhow::Result<()> {
     let curated_path = env::var("CURATED")?;
     let config = Config::new(&source_path, &curated_path);
 
+    fs::create_dir_all(format!("{curated_path}"))?;
+
     let release_history = release::read()?;
     for release in release_history.releases {
         let codename = &release.codename;
@@ -22,6 +24,8 @@ fn main() -> anyhow::Result<()> {
         curate(&config, codename, &walls)?;
         preview(&config, codename, &walls)?;
     }
+
+    meta_files(&config)?;
 
     Ok(())
 }
@@ -55,6 +59,18 @@ fn preview(config: &Config, codename: &str, wallpapers: &Vec<String>) -> anyhow:
 
     let mut file = fs::File::create(format!("{curated_path}/{codename}/README.md"))?;
     file.write_all(&content.into_bytes())?;
+
+    Ok(())
+}
+
+/// Preserve important files
+fn meta_files(config: &Config) -> anyhow::Result<()> {
+    let files = ["AUTHORS"];
+
+    for filename in files {
+        let target = format!("{filename}");
+        copy(config, filename, &target)?;
+    }
 
     Ok(())
 }

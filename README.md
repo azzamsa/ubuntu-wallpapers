@@ -30,3 +30,7 @@ So, I gathered them all here, organized by release, and made previews available.
 
 - [Manjaro Wallpapers](https://gitlab.manjaro.org/artwork/wallpapers/manjaro-wallpapers)
 - Any other curated OS wallpaper collections? Please make a PR.
+
+## Credits
+
+- [Ubuntu wallpapers package](https://code.launchpad.net/ubuntu/+source/ubuntu-wallpapers)
