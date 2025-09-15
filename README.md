@@ -1,8 +1,10 @@
 <!-- dprint-ignore-start -->
 <div align="center">
-  <h1>Curated Ubuntu Wallpapers</h1>
+  <h1>Ubuntu Wallpapers</h1>
 
   <img src='docs/logo.svg' width=80px />
+
+  <p>Curated Wallpapers from Ubuntu Contents</p>
 
   <a href="https://github.com/azzamsa/ubuntu-wallpapers/actions/workflows/ci.yml">
     <img src="https://github.com/azzamsa/ubuntu-wallpapers/actions/workflows/ci.yml/badge.svg" alt="Build status" />
