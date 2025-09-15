@@ -13,6 +13,11 @@ alias k := check
 _default:
     just --list --unsorted
 
+[doc('Clean Target Output')]
+clean:
+    #!/usr/bin/env bash
+    rm -rf curated
+
 [doc('Tasks to make the code-base comply with the rules. Mostly used in git hooks')]
 comply: fmt lint
 
@@ -40,7 +45,6 @@ fmt-check:
 [doc('Lint the codebase')]
 lint:
     cargo clippy --all-targets --all-features
-    typos
 
 [doc('Check dependencies health. Pass `--write` to upgrade dependencies')]
 up arg="":

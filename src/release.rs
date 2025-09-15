@@ -12,6 +12,8 @@ pub struct Release {
     pub codename: String,
     pub version: String,
     pub release_date: String,
+    #[serde(default)]
+    pub duplicates: Vec<String>,
 }
 
 pub fn read() -> anyhow::Result<ReleaseHistory> {

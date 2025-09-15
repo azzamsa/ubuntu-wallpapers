@@ -2,9 +2,8 @@ mod config;
 mod release;
 mod upstream;
 
-use std::env;
-use std::fs;
 use std::io::Write;
+use std::{env, fs};
 
 use crate::config::Config;
 
@@ -18,7 +17,7 @@ fn main() -> anyhow::Result<()> {
     let release_history = release::read()?;
     for release in release_history.releases {
         let codename = &release.codename;
-        let walls = upstream::walls(&config, codename)?;
+        let walls = upstream::walls(&config, codename, &release.duplicates)?;
 
         curate(&config, codename, &walls)?;
         preview(&config, codename, &walls)?;
@@ -31,6 +30,7 @@ fn curate(config: &Config, codename: &str, wallpapers: &Vec<String>) -> anyhow::
     let curated_path = config.curated_path.display();
 
     for filename in wallpapers {
+        dbg!(filename);
         fs::create_dir_all(format!("{curated_path}/{codename}"))?;
         let target = format!("{codename}/{filename}");
         copy(config, filename, &target)?;

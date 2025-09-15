@@ -13,21 +13,27 @@ pub struct UpstreamConfig {
 
 #[derive(Debug, Deserialize)]
 pub struct Wallpaper {
-    pub filename: Option<String>,
+    pub filename: String,
     #[serde(rename = "filename-dark")]
     pub filename_dark: Option<String>,
 }
 
-pub fn walls(config: &Config, codename: &str) -> anyhow::Result<Vec<String>> {
+pub fn walls(
+    config: &Config,
+    codename: &str,
+    duplicates: &[String],
+) -> anyhow::Result<Vec<String>> {
     let mut result: Vec<String> = Vec::new();
 
     let config = read(config, codename)?;
     for wallpaper in &config.wallpapers {
-        for fname in [&wallpaper.filename, &wallpaper.filename_dark] {
-            if let Some(name) = fname
-                && let Some(name) = extract_name(name)?
-            {
-                result.push(name);
+        for fname in [Some(&wallpaper.filename), wallpaper.filename_dark.as_ref()] {
+            if let Some(path) = fname {
+                if let Some(name) = extract_name(path)? {
+                    if !duplicates.contains(&name) {
+                        result.push(name);
+                    }
+                }
             }
         }
     }
