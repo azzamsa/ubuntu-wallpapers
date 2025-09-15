@@ -65,7 +65,7 @@ fn preview(config: &Config, codename: &str, wallpapers: &Vec<String>) -> anyhow:
 
 /// Preserve important files
 fn meta_files(config: &Config) -> anyhow::Result<()> {
-    let files = ["AUTHORS"];
+    let files = ["AUTHORS", "COPYING"];
 
     for filename in files {
         let target = filename.to_string();
