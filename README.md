@@ -1,4 +1,21 @@
-# Ubuntu Wallpapers
+<div align="center">
+  <h1>Curated Ubuntu Wallpapers</h1>
+
+  <img src='docs/logo.svg' width=80px />
+
+  <a href="https://github.com/azzamsa/ubuntu-wallpapers/workflows/ci.yml">
+    <img src="https://github.com/azzamsa/ubuntu-wallpapers/workflows/ci/badge.svg" alt="Build status" />
+  </a>
+
+</div>
+
+---
+
+## Features
+
+- Browse wallpapers easily
+- No duplicate images
+- Always up to date, simple to maintain, fully automated
 
 ## Why
 
