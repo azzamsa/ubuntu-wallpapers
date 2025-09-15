@@ -30,7 +30,6 @@ fn curate(config: &Config, codename: &str, wallpapers: &Vec<String>) -> anyhow::
     let curated_path = config.curated_path.display();
 
     for filename in wallpapers {
-        dbg!(filename);
         fs::create_dir_all(format!("{curated_path}/{codename}"))?;
         let target = format!("{codename}/{filename}");
         copy(config, filename, &target)?;

@@ -1,7 +1,5 @@
 # natty
 
-<img src=https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/main/curated/natty/Aeg_by_Tauno_Erik.jpg>
-
 <img src=https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/main/curated/natty/Arboreal_ballet_by_Bob_Farrell.jpg>
 
 <img src=https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/main/curated/natty/Aubergine_Sea_by_Wyatt_Kirby.jpg>
