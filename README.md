@@ -1,3 +1,4 @@
+<!-- dprint-ignore-start -->
 <div align="center">
   <h1>Curated Ubuntu Wallpapers</h1>
 
@@ -8,6 +9,7 @@
   </a>
 
 </div>
+<!-- dprint-ignore-end -->
 
 ---
 

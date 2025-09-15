@@ -14,7 +14,7 @@ fn main() -> anyhow::Result<()> {
     let curated_path = env::var("CURATED")?;
     let config = Config::new(&source_path, &curated_path);
 
-    fs::create_dir_all(format!("{curated_path}"))?;
+    fs::create_dir_all(&curated_path)?;
 
     let release_history = release::read()?;
     for release in release_history.releases {
@@ -68,7 +68,7 @@ fn meta_files(config: &Config) -> anyhow::Result<()> {
     let files = ["AUTHORS"];
 
     for filename in files {
-        let target = format!("{filename}");
+        let target = filename.to_string();
         copy(config, filename, &target)?;
     }
 

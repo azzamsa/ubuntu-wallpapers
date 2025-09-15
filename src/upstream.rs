@@ -28,12 +28,11 @@ pub fn walls(
     let config = read(config, codename)?;
     for wallpaper in &config.wallpapers {
         for fname in [Some(&wallpaper.filename), wallpaper.filename_dark.as_ref()] {
-            if let Some(path) = fname {
-                if let Some(name) = extract_name(path)? {
-                    if !duplicates.contains(&name) {
-                        result.push(name);
-                    }
-                }
+            if let Some(path) = fname
+                && let Some(name) = extract_name(path)?
+                && !duplicates.contains(&name)
+            {
+                result.push(name);
             }
         }
     }
