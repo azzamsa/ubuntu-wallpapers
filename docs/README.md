@@ -30,8 +30,8 @@ To prevent duplicate wallpapers from being included:
 Example:
 
 ```nu
-    # `Aeg_by_Tauno_Erik.jpg` already in `maverick` release
-    {codename: "natty",    version: "11.04", release_date: "2011-04-28", duplicates: ["Aeg_by_Tauno_Erik.jpg"]}
+# `Aeg_by_Tauno_Erik.jpg` already in `maverick` release
+{codename: "natty",    version: "11.04", release_date: "2011-04-28", duplicates: ["Aeg_by_Tauno_Erik.jpg"]}
 ```
 
 ## How To Make Sure Your Code Works?

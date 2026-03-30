@@ -10,10 +10,17 @@ alias k := check
 _default:
     just --list --unsorted
 
+[doc('Setup the project')]
+setup:
+    cp -n .scripts/hooks/pre-commit .git/hooks/
+
 [doc('Clean Target Output')]
 clean:
     #!/usr/bin/env bash
     rm -rf curated
+
+[doc('Comply, then check')]
+qq: comply check
 
 [doc('Tasks to make the code-base comply with the rules. Mostly used in git hooks')]
 comply: fmt lint
