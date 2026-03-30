@@ -32,6 +32,10 @@ Back when I first used Ubuntu (2013), it came with some really nice wallpapers. 
 
 So, I gathered them all here, organized by release, and made previews available. So you don’t have to download the entire repo just to choose a few.
 
+## Contributing
+
+See [Getting Started](docs/README.md) guide.
+
 ## Other
 
 - [Manjaro Wallpapers](https://gitlab.manjaro.org/artwork/wallpapers/manjaro-wallpapers)
