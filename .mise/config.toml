@@ -3,6 +3,7 @@ typos = "latest"
 dprint = "latest"
 actionlint = "latest"
 zizmor = "latest"
+shellcheck = "latest"
 
 [tasks.default]
 hide = true
@@ -30,7 +31,7 @@ depends = ["fix", "qq"]
 
 [tasks.qqq]
 description = "Exhaustive quality check"
-depends = ["qa", "lint-nu", "meta"]
+depends = ["qa", "meta"]
 
 [tasks.qq]
 description = "Quality check"
@@ -62,8 +63,15 @@ run = ["dprint check"]
 [tasks.lint]
 hide = true
 description = "Lint"
-depends = ["fmt-check"]
+depends = ["fmt-check", "lint-shell", "lint-nu"]
 run = "typos"
+
+[tasks.lint-shell]
+hide = true
+description = "Lint shell scripts"
+run = [
+  "grep -lE '^#!.*(bash|sh)$' .mise/tasks/* | xargs -r shellcheck",
+]
 
 [tasks.lint-nu]
 hide = true
@@ -91,4 +99,4 @@ run = ["pnpx actions-up", "actionlint", "zizmor .github/workflows/*"]
 hide = true
 description = "Create release tarball"
 run = "mise run package"
-env = { REPO_NAME = "ubuntu-wallpapers", RELEASE_VERSION = "{{arg(name='version')}}" }
+env = { REPO_NAME = "ubuntu-wallpapers" }
