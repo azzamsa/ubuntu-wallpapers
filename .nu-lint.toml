@@ -1,0 +1,4 @@
+[rules]
+catch_builtin_error_try = "off"
+list_param_to_variadic = "off"
+where_closure_drop_parameter = "off"
