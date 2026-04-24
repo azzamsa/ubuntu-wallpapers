@@ -1,0 +1,34 @@
+#!/usr/bin/env nu
+#MISE description="Create a release with the given tag"
+
+def main [tag: string] {
+    # Validate tag
+    if ($tag | str trim) == "" {
+        error make { msg: "Error: tag must not be empty" }
+    }
+
+    # Check for dirty working tree (covers untracked, modified, and staged files)
+    let dirty = (git status --porcelain | str trim)
+    if $dirty != "" {
+        error make { msg: "Error: Working tree is dirty. Stash or commit changes first." }
+    }
+
+    # Update the changelog
+    print "Updating the changelog"
+    git-cliff --config .cliff.toml --tag $tag --output CHANGELOG.md
+
+    # Format the newly created changelog file
+    just fmt
+
+    # Write the new version to a file 'version'
+    $tag | save --force version
+
+    # Commit a release
+    git add --all
+    git commit --message $tag
+    git show
+
+    # Sign and annotate the tag (requires GPG key to be available)
+    git tag --sign --annotate $tag --message "For details, see the CHANGELOG.md"
+    git tag --verify $tag
+}

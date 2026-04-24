@@ -1,0 +1,6 @@
+[files]
+extend-exclude = ["CHANGELOG.md", "AUTHORS"]
+
+[default.extend-words]
+# Dans_ma_bulle
+bulle = "bulle"

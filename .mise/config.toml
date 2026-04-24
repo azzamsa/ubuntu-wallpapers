@@ -1,0 +1,79 @@
+[tools]
+typos = "latest"
+dprint = "latest"
+actionlint = "latest"
+zizmor = "latest"
+
+[tasks.default]
+run = ["mise run curate"]
+
+[tasks.setup]
+confirm = 'Are you sure?'
+description = "Setup the project"
+depends = ["hooks"]
+
+[tasks.hooks]
+hide = true
+description = "Setup Git hooks"
+run = "mise run hooks"
+
+[tasks.clean]
+hide = true
+description = "Clean target output"
+run = "rm -rf curated"
+
+[tasks.qc]
+description = "Fix before check"
+depends = ["fix", "qq"]
+
+[tasks.qqq]
+description = "Exhaustive quality check"
+depends = ["qa", "lint-nu", "meta"]
+
+[tasks.qq]
+description = "Quality check"
+depends = ["qa"]
+
+[tasks.qa]
+description = "Quick quality check"
+depends = ["fmt-check", "lint"]
+run = "mise run --cd utils/snacks qa"
+
+[tasks.fix]
+description = "Enforce rules"
+depends = ["fmt", "lint"]
+run = "mise run --cd utils/snacks fix"
+
+[tasks.curate]
+description = "Curate"
+depends = ["fmt", "lint"]
+run = "SOURCE=~/labs/forks/ubuntu-wallpapers nu src/curate.nu"
+
+[tasks.fmt]
+description = "Format"
+run = ["dprint fmt"]
+
+[tasks.fmt-check]
+description = "Check formatting"
+run = ["dprint check"]
+
+[tasks.lint]
+description = "Lint"
+depends = ["fmt-check"]
+run = "typos"
+
+[tasks.lint-nu]
+description = "Lint Nushell code"
+run = "nu-lint src/"
+
+[tasks.release]
+description = "Create a new release"
+run = "./release $1"
+
+[tasks.up]
+description = "Upgrade dependencies"
+run = "dprint config update"
+
+[tasks.meta]
+description = "Dependency analysis"
+run = ["pnpx actions-up", "actionlint", "zizmor .github/workflows/*"]
