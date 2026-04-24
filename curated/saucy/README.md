@@ -35,4 +35,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/saucy/Untitled_by_Garazi_Unzueta.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/saucy/Water_Lily_by_Denis_Dugushkin.jpg">
-

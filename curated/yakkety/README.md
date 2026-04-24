@@ -23,4 +23,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/yakkety/Wanaka_Tree_by_Stephane_Pakula.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/yakkety/Yala_mountain_by_Geza_Radics.jpg">
-

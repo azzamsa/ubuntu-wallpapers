@@ -17,4 +17,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/eoan/Ermine_lines_by_Gustavo_Brenner.png">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/eoan/Flight_dive_by_Nicolas_Silva.png">
-

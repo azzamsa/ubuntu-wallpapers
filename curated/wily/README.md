@@ -19,4 +19,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/wily/Mediterranean_Sea_by_simosx.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/wily/Abstract_Ubuntu_by_Marek_Koteluk.jpg">
-

@@ -33,4 +33,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/natty/Variations-On-Natty-Narwhal-1_by_madeinkobaia.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/natty/White_flowers_by_Garuna_bor-bor.jpg">
-

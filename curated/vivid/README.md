@@ -19,4 +19,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/vivid/Tesla_by_Tomasino.cz.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/vivid/Traviny_by_Tomasino.cz.jpg">
-

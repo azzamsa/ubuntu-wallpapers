@@ -11,4 +11,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/questing/Ubuntu_with_Frutiger_Metro_by_lyk_lyk.png">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/questing/Schattenzug_by_OrbiteLambda.webp">
-

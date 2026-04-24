@@ -47,7 +47,7 @@ run = "mise run --cd utils/snacks fix"
 [tasks.curate]
 description = "Curate"
 depends = ["fmt", "lint"]
-run = "SOURCE=~/labs/forks/ubuntu-wallpapers nu src/curate.nu"
+run = "SOURCE=~/labs/forks/ubuntu-wallpapers-upstream nu src/curate.nu"
 
 [tasks.fmt]
 description = "Format"

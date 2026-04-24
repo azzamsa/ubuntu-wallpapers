@@ -47,4 +47,5 @@
     {codename: "oracular", version: "24.10", release_date: "2024-10-10"}
     {codename: "plucky",   version: "25.04", release_date: "2025-04-17"}
     {codename: "questing", version: "25.10", release_date: "2025-10-09"}
+    {codename: "resolute", version: "26.04", release_date: "2026-04-23"}
 ]

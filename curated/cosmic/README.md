@@ -23,4 +23,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/cosmic/touch_de_vert_by_François_Cante.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/cosmic/Ubuntu_Party_de_Paris_by_Marcos_Costales.jpg">
-

@@ -19,4 +19,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/oracular/Ubuntu_Legacy_by_Aaron_J_Prisk_light.png">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/oracular/Ubuntu_Legacy_by_Aaron_J_Prisk_dark.png">
-

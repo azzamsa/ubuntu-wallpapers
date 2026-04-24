@@ -19,4 +19,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/lunar/winter-is-leaving_by_Gixo-light.png">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/lunar/winter-is-leaving_by_Gixo-dark.png">
-

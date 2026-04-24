@@ -21,4 +21,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/quantal/Roof_Tiles_by_Finn_Sturdy.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/quantal/Vanishing_by_James_Wilson.jpg">
-

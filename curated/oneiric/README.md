@@ -27,4 +27,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/oneiric/The_Grass_aint_Greener_by_fix_pena.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/oneiric/WildWheat_by_Brian_Burt.jpg">
-

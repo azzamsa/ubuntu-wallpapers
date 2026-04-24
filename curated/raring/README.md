@@ -25,4 +25,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/raring/Trazo_solitario_by_Julio_Diliegros.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/raring/Winter_Fog_by_Daniel_Vesterskov.jpg">
-

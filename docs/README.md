@@ -6,9 +6,9 @@ Fetch upstream images.
 
 ```bash
 # get upstream wallpapers
-$ git clone --depth 1 https://git.launchpad.net/ubuntu/+source/ubuntu-wallpapers ~/labs/forks/ubuntu-wallpapers
+$ git clone --depth 1 https://git.launchpad.net/ubuntu/+source/ubuntu-wallpapers ~/labs/forks/ubuntu-wallpapers-upstream
 
-$ cd ubuntu-wallpapers
+$ cd ubuntu-wallpapers-upstream
 $ git pull --rebase origin ubuntu/devel
 ```
 
@@ -17,8 +17,37 @@ Curate the wallpapers.
 ```bash
 $ git clone git@github.com:azzamsa/ubuntu-wallpapers.git
 $ cd ubuntu-wallpapers
-$ mise # or just copy the mise recipe to terminal
+$ mise run  # or copy the mise recipe into your terminal
 ```
+
+## Help, There’s a New Release!
+
+Pull the latest changes from upstream.
+
+```bash
+$ cd ubuntu-wallpapers-upstream
+$ git pull --rebase origin ubuntu/devel
+```
+
+Add new entry to `src/releases.noun` based on data in https://www.releases.ubuntu.com.
+
+```
+[DIR] resolute/               2026-04-23 15:50    -   Ubuntu 26.04 LTS (Resolute Raccoon)
+```
+
+```diff
+    {codename: "questing", version: "25.10", release_date: "2025-10-09"}
++   {codename: "resolute", version: "26.04", release_date: "2026-04-23"}
+]
+```
+
+Then, run.
+
+``` bash
+mise run
+```
+
+Now, check duplicate images using the guide below.
 
 ### Handling Duplicate Images
 
@@ -38,14 +67,10 @@ Example:
 
 ```bash
 $ mise run clean
-$ mise
+$ mise run
 
 $ git status
 ```
 
 If no changes in `curated/` dir, it means your code works as expected.
 As it prodoces the same result.
-
-## Is There Any New Release?
-
-See https://www.releases.ubuntu.com/

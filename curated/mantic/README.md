@@ -21,4 +21,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/mantic/Mountain_king_by_seashxlls.png">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/mantic/Ubuntu_warrior_by_jt05.png">
-

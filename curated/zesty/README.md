@@ -23,4 +23,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/zesty/Some_Light_Reading_by_Brandilyn_Carpenter.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/zesty/there_is_something_human_in_that_stuff_by_Pierre_Cante.jpg">
-

@@ -27,4 +27,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/precise/Twilight_Frost_by_Phil_Jackson.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/precise/Winter_Morning_by_Shannon_Lucas.jpg">
-

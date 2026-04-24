@@ -19,4 +19,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/jammy/ubuntu2_by_arman1992.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/jammy/ubuntu_by_arman1992.jpg">
-

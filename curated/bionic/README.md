@@ -23,4 +23,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/bionic/This_Is_Bionic_Beaver_by_Pierre_Cante.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/bionic/Wall_with_door_on_Gozo_by_Matthias_Niess.jpg">
-

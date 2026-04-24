@@ -19,4 +19,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/disco/80s_Disco_Dingo_Simulation_by_Abubakar_NK.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/disco/Disco_Dingo_Alt_Default_by_Abubakar_NK.png">
-

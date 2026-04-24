@@ -23,4 +23,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/xenial/TCP118v1_by_Tiziano_Consonni.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/xenial/The_Land_of_Edonias_by_Γιωργος_Αργυροπουλος.jpg">
-

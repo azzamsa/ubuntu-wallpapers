@@ -33,4 +33,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/maverick/Spiral_by_firas.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/maverick/Waterchain_by_Poje_Mario.jpg">
-

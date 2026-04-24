@@ -9,4 +9,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/focal/ryan-stone-skykomish-river.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/focal/hardy_wallpaper_uhd.png">
-

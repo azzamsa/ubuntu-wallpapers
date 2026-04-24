@@ -9,4 +9,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/groovy/Landscape_Photography_Of_Mountains_by_Simon_Berger.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/groovy/Silver_Back_Gorilla_by_Mike_Arney.jpg">
-

@@ -25,4 +25,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/artful/Sunrise_on_the_beach_by_Luca_Ciavatta.jpg">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/artful/Voss_by_fortuneblues.jpg">
-

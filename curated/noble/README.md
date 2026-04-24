@@ -17,4 +17,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/noble/Rainbow_lightbulb_by_Daniel_Micallef.png">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/noble/Northan_lights_by_mizuno.webp">
-

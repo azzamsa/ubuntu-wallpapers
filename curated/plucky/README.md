@@ -17,4 +17,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/plucky/Ubuntu_tide_by_lost-cause-light.png">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/plucky/Ubuntu_tide_by_lost-cause-dark.png">
-

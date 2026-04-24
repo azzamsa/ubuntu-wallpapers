@@ -13,4 +13,3 @@
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/kinetic/Reflection_by_Juliette_Taka.png">
 
 <img src="https://raw.githubusercontent.com/azzamsa/ubuntu-wallpapers/refs/heads/master/curated/kinetic/Saffron_by_Rakesh_Yadav.png">
-
