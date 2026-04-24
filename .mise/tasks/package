@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #
 # Build a release tarball.
 #
@@ -20,7 +19,6 @@ PKG_NAME="${PKG_BASENAME}.tar.gz"
 # Staging directory — /tmp.
 PKG_STAGING="/tmp/package"
 ARCHIVE_DIR="${PKG_STAGING}/${PKG_BASENAME}"
-
 mkdir -p "${ARCHIVE_DIR}"
 
 # Copy only the curated wallpapers.
@@ -33,4 +31,4 @@ tar -czf "${PKG_STAGING}/${PKG_NAME}" -C "${PKG_STAGING}" "${PKG_BASENAME}"
 {
   echo "PKG_NAME=${PKG_NAME}"
   echo "PKG_PATH=${PKG_STAGING}/${PKG_NAME}"
-} >> "${GITHUB_OUTPUT
+} >> "${GITHUB_OUTPUT}"

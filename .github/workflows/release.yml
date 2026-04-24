@@ -52,7 +52,7 @@ jobs:
       - name: Create tarball
         id: package
         shell: bash
-        run: mise run package "$RELEASE_VERSION"
+        run: mise run package
 
       - name: Set prerelease flag
         shell: bash
