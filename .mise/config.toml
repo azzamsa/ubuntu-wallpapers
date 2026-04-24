@@ -4,6 +4,7 @@ dprint = "latest"
 actionlint = "latest"
 zizmor = "latest"
 shellcheck = "latest"
+"cargo:nu-lint" = "latest"
 
 [tasks.default]
 hide = true
