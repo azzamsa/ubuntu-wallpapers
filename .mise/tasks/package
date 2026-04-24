@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+#
+# Build a release tarball.
+#
+# - Stages the contents of ./curated/ into /tmp/package/<name>-<version>/
+# - Creates a gzipped tarball of that directory
+# - Emits the resulting filename and path as GitHub Actions outputs
+
+set -euo pipefail
+
+# Validate required inputs up front.
+: "${REPO_NAME:?REPO_NAME is required}"
+: "${RELEASE_VERSION:?RELEASE_VERSION is required}"
+
+# Derive archive naming.
+PKG_BASENAME="${REPO_NAME}-${RELEASE_VERSION}"
+PKG_NAME="${PKG_BASENAME}.tar.gz"
+
+# Staging directory — /tmp.
+PKG_STAGING="/tmp/package"
+ARCHIVE_DIR="${PKG_STAGING}/${PKG_BASENAME}"
+
+mkdir -p "${ARCHIVE_DIR}"
+
+# Copy only the curated wallpapers.
+rsync -a curated/ "${ARCHIVE_DIR}/"
+
+# Compress the archive.
+tar -czf "${PKG_STAGING}/${PKG_NAME}" -C "${PKG_STAGING}" "${PKG_BASENAME}"
+
+# Expose outputs to later workflow steps.
+{
+  echo "PKG_NAME=${PKG_NAME}"
+  echo "PKG_PATH=${PKG_STAGING}/${PKG_NAME}"
+} >> "${GITHUB_OUTPUT

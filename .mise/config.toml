@@ -5,9 +5,11 @@ actionlint = "latest"
 zizmor = "latest"
 
 [tasks.default]
+hide = true
 run = ["mise run curate"]
 
 [tasks.setup]
+hide = true
 confirm = 'Are you sure?'
 description = "Setup the project"
 depends = ["hooks"]
@@ -48,30 +50,44 @@ depends = ["fmt", "lint"]
 run = "SOURCE=~/labs/forks/ubuntu-wallpapers-upstream nu src/curate.nu"
 
 [tasks.fmt]
+hide = true
 description = "Format"
 run = ["dprint fmt"]
 
 [tasks.fmt-check]
+hide = true
 description = "Check formatting"
 run = ["dprint check"]
 
 [tasks.lint]
+hide = true
 description = "Lint"
 depends = ["fmt-check"]
 run = "typos"
 
 [tasks.lint-nu]
+hide = true
 description = "Lint Nushell code"
 run = "nu-lint src/"
 
 [tasks.release]
+hide = true
 description = "Create a new release"
-run = "./release $1"
+run = "./release {{arg(name='version')}}"
 
 [tasks.up]
+hide = true
 description = "Upgrade dependencies"
 run = "dprint config update"
 
 [tasks.meta]
+hide = true
 description = "Dependency analysis"
 run = ["pnpx actions-up", "actionlint", "zizmor .github/workflows/*"]
+
+[tasks.package] # CI
+hide = true
+description = "Create release tarball"
+depends = ["curate"]
+run = "scripts/package.sh"
+env = { REPO_NAME = "ubuntu-wallpapers", RELEASE_VERSION = "{{arg(name='version')}}" }
