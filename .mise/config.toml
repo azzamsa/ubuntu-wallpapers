@@ -90,6 +90,5 @@ run = ["pnpx actions-up", "actionlint", "zizmor .github/workflows/*"]
 [tasks.package] # CI
 hide = true
 description = "Create release tarball"
-depends = ["curate"]
-run = "scripts/package.sh"
+run = "mise run package"
 env = { REPO_NAME = "ubuntu-wallpapers", RELEASE_VERSION = "{{arg(name='version')}}" }
