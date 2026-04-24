@@ -69,9 +69,7 @@ run = "typos"
 [tasks.lint-shell]
 hide = true
 description = "Lint shell scripts"
-run = [
-  "grep -lE '^#!.*(bash|sh)$' .mise/tasks/* | xargs -r shellcheck",
-]
+run = ["grep -lE '^#!.*(bash|sh)$' .mise/tasks/* | xargs -r shellcheck"]
 
 [tasks.lint-nu]
 hide = true

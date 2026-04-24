@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.1](https://github.com/azzamsa/ubuntu-wallpapers/compare/v0.1.0..v0.1.1) - 2026-04-24
+
+### 🐛 Bug Fixes
+
+- No more build steps - ([ef71266](https://github.com/azzamsa/ubuntu-wallpapers/commit/ef7126620b2f64970a7ed8a9ead37831790d9757))
+
+### 🚜 Refactor
+
+- Lint shell scripts - ([7676468](https://github.com/azzamsa/ubuntu-wallpapers/commit/76764683543a02fc187925c3358877c7ab99187a))
+
+### ⚙️  Miscellaneous Tasks
+
+- Better scripts - ([8268808](https://github.com/azzamsa/ubuntu-wallpapers/commit/8268808dde0402e49124cb39dcfb01071ac512db))
+
+
 ## [0.1.0] - 2026-04-24
 
 ### ⛰️  Features
