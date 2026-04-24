@@ -72,7 +72,9 @@ run = "nu-lint src/"
 
 [tasks.release]
 hide = true
+confirm = 'Have you run `qqq`?'
 description = "Create a new release"
+depends = ["qqq"]
 run = "./release {{arg(name='version')}}"
 
 [tasks.up]

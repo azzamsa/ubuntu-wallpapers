@@ -78,7 +78,7 @@ As it prodoces the same result.
 ## Create a New Release
 
 ```bash
-mise run release v2.0.0
+mise run release v0.1.0
 ```
 
 - Check the Git log.
