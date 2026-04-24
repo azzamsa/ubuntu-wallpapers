@@ -43,7 +43,7 @@ Add new entry to `src/releases.noun` based on data in https://www.releases.ubunt
 
 Then, run.
 
-``` bash
+```bash
 mise run
 ```
 
@@ -74,3 +74,14 @@ $ git status
 
 If no changes in `curated/` dir, it means your code works as expected.
 As it prodoces the same result.
+
+## Create a New Release
+
+```bash
+mise run release v2.0.0
+```
+
+- Check the Git log.
+- Push the release commit.
+  - Wait until all CI checks pass.
+- Push the release tag.

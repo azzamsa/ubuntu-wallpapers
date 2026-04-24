@@ -37,12 +37,10 @@ depends = ["qa"]
 [tasks.qa]
 description = "Quick quality check"
 depends = ["fmt-check", "lint"]
-run = "mise run --cd utils/snacks qa"
 
 [tasks.fix]
 description = "Enforce rules"
 depends = ["fmt", "lint"]
-run = "mise run --cd utils/snacks fix"
 
 [tasks.curate]
 description = "Curate"

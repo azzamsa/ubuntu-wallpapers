@@ -1,6 +1,4 @@
 [files]
-extend-exclude = ["CHANGELOG.md", "AUTHORS"]
+extend-exclude = ["CHANGELOG.md", "AUTHORS", "**/curated/**"]
 
 [default.extend-words]
-# Dans_ma_bulle
-bulle = "bulle"

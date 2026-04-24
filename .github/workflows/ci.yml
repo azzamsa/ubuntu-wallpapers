@@ -6,21 +6,19 @@ jobs:
   code_quality:
     name: Code Quality
     runs-on: ubuntu-24.04
+    permissions:
+      contents: read
     steps:
-
       - name: Checkout source code
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-
-      - uses: actions-rust-lang/setup-rust-toolchain@150fca883cd4034361b621bd4e6a9d34e5143606 # v1.15.4
         with:
-          components: 'clippy, rustfmt'
+          persist-credentials: false
 
-      - uses: taiki-e/install-action@80a23c5ba9e1100fd8b777106e810018ed662a7b # v2.69.12
+      - uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151 # v4.0.1
         with:
-          tool: 'just,dprint,typos'
+          install: true
+          cache: true
 
-      - name: Ensure `fmt` has been run
-        run: just fmt-check
-
-      - name: Run clippy
-        run: just lint
+      - name: Quality Check
+        run: |
+          mise qq
