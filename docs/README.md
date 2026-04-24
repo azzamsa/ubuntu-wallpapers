@@ -2,22 +2,22 @@
 
 ## Getting Started
 
-Prepare the repos.
+Fetch upstream images.
 
 ```bash
 # get upstream wallpapers
 $ git clone --depth 1 https://git.launchpad.net/ubuntu/+source/ubuntu-wallpapers ~/labs/forks/ubuntu-wallpapers
+
 $ cd ubuntu-wallpapers
 $ git pull --rebase origin ubuntu/devel
-
-# clone the repo
-$ git clone git@github.com:azzamsa/ubuntu-wallpapers.git
 ```
 
-Run the scripts.
+Curate the wallpapers.
 
 ```bash
-$ just run # j r
+$ git clone git@github.com:azzamsa/ubuntu-wallpapers.git
+$ cd ubuntu-wallpapers
+$ mise # or just copy the mise recipe to terminal
 ```
 
 ### Handling Duplicate Images
@@ -37,11 +37,15 @@ Example:
 ## How To Make Sure Your Code Works?
 
 ```bash
-$ just clean # j clean
-$ just run # j r
+$ mise run clean
+$ mise
 
 $ git status
 ```
 
 If no changes in `curated/` dir, it means your code works as expected.
 As it prodoces the same result.
+
+## Is There Any New Release?
+
+See https://www.releases.ubuntu.com/
