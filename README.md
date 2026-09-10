@@ -17,6 +17,8 @@
 
 👉 [**Browse Wallpapers →**](curated/)
 
+There are many good wallpapers that didn't make it to the finals. See [Competition](docs/Competition.md).
+
 ## Features
 
 - Browse wallpapers easily

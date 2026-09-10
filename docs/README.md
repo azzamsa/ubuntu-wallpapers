@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Fetch upstream images.
+Fetch [upstream images](https://git.launchpad.net/ubuntu/+source/ubuntu-wallpapers).
 
 ```bash
 # get upstream wallpapers
